@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+        }
+        nav{
+            background-color: rgb(53, 14, 90);
+            color: white;
+            font-size: 35px;   
+        }
+
+        nav ul{
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            padding:0px 20px;
+        }
+
+        nav ul li{
+            padding: 0px 30px;;
+        }
+
+
+        .container{
+            margin-top:100px;
+            margin-left: 100px;;
+            width:480px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+           
+        }
+        .box{
+            width:150px;
+            height:150px;
+            border:2px solid rgb(53, 14, 90);
+             text-align: center;
+            font-size: 80px;
+            cursor:pointer;
+            border-radius:5px;
+          padding:1px ;
+        }
+        .box:hover{
+            background-color: plum;
+        }
+        .change{
+            color:white;
+            background-color:rgb(150, 40, 150);
+        }
+
+        #display{
+            background-color: rgb(53, 14, 90);
+            color:white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 50px;
+            margin-left: 335px;
+            margin-top:15px;
+            width: 450px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Tic-Tac-Toe</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div><p class="box"></p></div>
+        <div><p class="box"></p></div>
+        <div><p class="box"></p></div>
+        <div><p class="box"></p></div>
+        <div><p class="box"></p></div>
+        <div><p class="box"></p></div>
+        <div><p class="box"></p></div>
+        <div><p class="box"></p></div>
+        <div><p class="box"></p></div>
+        
+    </div>
+
+    <div id ="display">
+        
+    </div>
+
+
+    <script src="logic.js"></script>
+
+</body>
+</html>
